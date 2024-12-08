@@ -1,1 +1,1 @@
-# Nuxt-Hotel
+### Nuxt-Hotel
