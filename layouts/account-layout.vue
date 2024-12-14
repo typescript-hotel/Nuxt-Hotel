@@ -1,26 +1,21 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import { Icon } from '@iconify/vue';
+import { RouterLink, RouterView } from "vue-router";
+import { Icon } from "@iconify/vue";
 
-import 'bootstrap/js/dist/collapse';
+import "bootstrap/js/dist/collapse";
 </script>
 
 <template>
   <div class="min-vh-100 bg-neutral-120">
-    <header
-      class="position-fixed z-3 w-100 bg-neutral-120"
-    >
+    <header class="position-fixed z-3 w-100 bg-neutral-120">
       <nav class="navbar navbar-expand-md p-0 mx-3 my-4 mx-md-20 my-md-6">
         <div class="container-fluid justify-content-between p-0">
-          <RouterLink
-            class="navbar-brand p-0"
-            to="/"
-          >
+          <RouterLink class="navbar-brand p-0" to="/">
             <img
               src="@/assets/images/logo-white.svg"
               alt="logo"
               class="logo img-fluid"
-            >
+            />
           </RouterLink>
           <button
             class="navbar-toggler collapsed p-2 text-white border-0 shadow-none"
@@ -31,25 +26,13 @@ import 'bootstrap/js/dist/collapse';
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <Icon
-              class="fs-1"
-              icon="mdi:close"
-            />
-            <Icon
-              class="fs-5"
-              icon="mdi:menu"
-            />
+            <Icon class="fs-1" icon="mdi:close" />
+            <Icon class="fs-5" icon="mdi:menu" />
           </button>
-          <div
-            id="navbar"
-            class="collapse navbar-collapse"
-          >
+          <div id="navbar" class="collapse navbar-collapse">
             <ul class="d-md-none navbar-nav gap-4 ms-auto fw-bold">
               <li class="nav-item">
-                <RouterLink
-                  to="/"
-                  class="nav-link p-4 text-neutral-0"
-                >
+                <RouterLink to="/" class="nav-link p-4 text-neutral-0">
                   客房旅宿
                 </RouterLink>
               </li>
@@ -58,18 +41,12 @@ import 'bootstrap/js/dist/collapse';
                   to="/"
                   class="nav-link d-flex gap-2 p-4 text-neutral-0"
                 >
-                  <Icon
-                    class="fs-5"
-                    icon="mdi:account-circle-outline"
-                  />
+                  <Icon class="fs-5" icon="mdi:account-circle-outline" />
                   Jessica
                 </RouterLink>
               </li>
               <li class="d-md-none nav-item">
-                <RouterLink
-                  to="/"
-                  class="nav-link p-4 text-neutral-0"
-                >
+                <RouterLink to="/" class="nav-link p-4 text-neutral-0">
                   會員登入
                 </RouterLink>
               </li>
@@ -89,26 +66,28 @@ import 'bootstrap/js/dist/collapse';
     <div class="position-relative d-flex flex-column flex-md-row">
       <img
         class="d-none d-md-block position-relative z-1 min-vh-100 object-fit-cover"
-        style="max-width: 50%;"
+        style="max-width: 50%"
         src="@/assets/images/login-hero.png"
         alt="login-hero"
-      >
+      />
 
-      <div class="d-flex flex-column justify-content-center align-items-center flex-grow-1 pt-18 pt-md-0">
+      <div
+        class="d-flex flex-column justify-content-center align-items-center flex-grow-1 pt-18 pt-md-0"
+      >
         <picture class="w-100">
           <source
             srcset="@/assets/images/deco-line-group-horizontal.svg"
             media="(min-width: 576px)"
-          >
+          />
           <img
             class="deco-line-group"
             src="@/assets/images/deco-line-group-horizontal-sm.svg"
             alt="deco-line-group"
-          >
+          />
         </picture>
-        
+
         <main class="position-relative w-100 w-md-auto">
-          <RouterView />
+          <slot />
         </main>
       </div>
     </div>
@@ -125,7 +104,7 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1537px
+  xxxl: 1537px,
 );
 
 .logo {
@@ -150,9 +129,9 @@ $grid-breakpoints: (
     visibility: hidden;
 
     svg {
-      transition: opacity .3s;
+      transition: opacity 0.3s;
     }
-    
+
     svg:nth-child(1) {
       position: absolute;
       top: 28px;
@@ -183,7 +162,7 @@ $grid-breakpoints: (
     inset: 0;
     opacity: 0;
     overflow: hidden;
-    transition: opacity .05s;
+    transition: opacity 0.05s;
   }
   .navbar-collapse.show {
     opacity: 1;
@@ -200,7 +179,6 @@ $grid-breakpoints: (
   }
 }
 
-
 .deco-line-group {
   position: absolute;
   top: 192px;
@@ -211,6 +189,4 @@ $grid-breakpoints: (
     width: 100%;
   }
 }
-
-
 </style>
