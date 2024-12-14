@@ -3,7 +3,9 @@ import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
-  <main class="pt-18 pt-md-30 bg-neutral-120">
+  <div>
+    <AppHeader />
+    <main class="pt-18 pt-md-30 bg-neutral-120">
     <section class="position-relative">
       <picture>
         <source
@@ -80,6 +82,8 @@ import { RouterLink, RouterView } from 'vue-router';
       >
     </picture>
   </main>
+  </div>
+  
 </template>
 
 <style lang="scss" scoped>
