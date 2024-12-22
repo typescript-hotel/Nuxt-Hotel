@@ -12,7 +12,7 @@ import "bootstrap/js/dist/collapse";
         <div class="container-fluid justify-content-between p-0">
           <RouterLink class="navbar-brand p-0" to="/">
             <img
-              src="@/assets/images/logo-white.svg"
+              src="@/public/images/logo-white.svg"
               alt="logo"
               class="logo img-fluid"
             />
@@ -67,7 +67,7 @@ import "bootstrap/js/dist/collapse";
       <img
         class="d-none d-md-block position-relative z-1 min-vh-100 object-fit-cover"
         style="max-width: 50%"
-        src="@/assets/images/login-hero.png"
+        src="@/public/images/login-hero.png"
         alt="login-hero"
       />
 
@@ -76,12 +76,12 @@ import "bootstrap/js/dist/collapse";
       >
         <picture class="w-100">
           <source
-            srcset="@/assets/images/deco-line-group-horizontal.svg"
+            srcset="@/public/images/deco-line-group-horizontal.svg"
             media="(min-width: 576px)"
           />
           <img
             class="deco-line-group"
-            src="@/assets/images/deco-line-group-horizontal-sm.svg"
+            src="@/public/images/deco-line-group-horizontal-sm.svg"
             alt="deco-line-group"
           />
         </picture>

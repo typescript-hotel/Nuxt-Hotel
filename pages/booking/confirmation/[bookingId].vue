@@ -75,7 +75,7 @@ const { bookingId } = route.params;
 
             <img
               class="img-fluid rounded-3"
-              src="@/assets/images/room-a-1.png"
+              src="@/public/images/room-a-1.png"
               alt="room-a"
             />
 
@@ -276,12 +276,12 @@ const { bookingId } = route.params;
     </div>
     <picture>
       <source
-        srcset="@/assets/images/deco-line-group-horizontal-full.svg"
+        srcset="@/public/images/deco-line-group-horizontal-full.svg"
         media="(min-width:576px)"
       />
       <img
         class="w-100"
-        src="@/assets/images/deco-line-group-horizontal-sm.svg"
+        src="@/public/images/deco-line-group-horizontal-sm.svg"
         alt="deco-line-group"
       />
     </picture>

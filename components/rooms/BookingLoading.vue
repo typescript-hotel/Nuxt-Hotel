@@ -1,11 +1,11 @@
 <template>
   <div
     class="position-fixed z-3 d-flex justify-content-center align-items-center px-3"
-    style="inset: 0; background-color: #0005;; backdrop-filter: blur(10px);"
+    style="inset: 0; background-color: #0005; backdrop-filter: blur(10px)"
   >
     <div
       class="w-100 h-50 h-md-75 d-flex flex-column justify-content-center align-items-center bg-neutral-0"
-      style="max-width: 1020px; border-radius: 20px;"
+      style="max-width: 1020px; border-radius: 20px"
     >
       <div class="d-flex gap-4 mb-15">
         <div
@@ -32,20 +32,16 @@
       </div>
       <img
         class="mb-4"
-        style="max-width: 144px;"
-        src="@/assets/images/logo-primary.svg"
+        style="max-width: 144px"
+        src="@/public/images/logo-primary.svg"
         alt="logo"
-      >
-      <p class="mb-0 text-neutral-100 fs-5 fw-bold">
-        正在處理你的預訂
-      </p>
+      />
+      <p class="mb-0 text-neutral-100 fs-5 fw-bold">正在處理你的預訂</p>
     </div>
   </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
 $breakpoint-md: 768px;
@@ -56,7 +52,8 @@ $breakpoint-md: 768px;
   }
 }
 
-.spinner-grow, .spinner-border {
+.spinner-grow,
+.spinner-border {
   width: 12px;
   height: 12px;
 }

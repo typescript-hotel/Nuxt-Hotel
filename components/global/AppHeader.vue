@@ -37,7 +37,7 @@ onUnmounted(() => {
       <div class="container-fluid justify-content-between p-0">
         <NuxtLink class="navbar-brand p-0" to="/">
           <img
-            src="@/assets/images/logo-white.svg"
+            src="@/public/images/logo-white.svg"
             alt="logo"
             class="logo img-fluid"
           />

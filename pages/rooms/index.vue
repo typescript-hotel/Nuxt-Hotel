@@ -46,12 +46,12 @@ const roomImages = computed(() => {
         <swiper-slide v-for="(num, index) in 5" :key="index">
           <picture>
             <source
-              srcset="@/assets/images/home-hero.png"
+              srcset="@/public/images/home-hero.png"
               media="(min-width:576px)"
             />
             <img
               class="hero-img"
-              src="@/assets/images/home-hero-sm.png"
+              src="@/public/images/home-hero-sm.png"
               alt="hero banner"
             />
           </picture>
